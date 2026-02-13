@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Hair Care - Studio Well | Perfekcyjna fryzura 24/7</title>
+    <meta name="description" content="Miesięczna subskrypcja premium dla wymagających kobiet biznesu. Twoja dedykowana stylistka, priorytetowe terminy, włosy które wyglądają perfekcyjnie przez 4-6 tygodni. Kraków.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Executive Hair Care - Studio Well">
+    <meta property="og:description" content="Perfekcyjna fryzura która pracuje 24/7 - bez wysiłku z Twojej strony">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+    
+    <style>
+        :root {
+            --cream: #faf9f6;
+            --warm-white: #fefdfb;
+            --beige: #e8e4db;
+            --terracotta: #cc8b65;
+            --gold: #d4af37;
+            --warm-green: #8b9d83;
+            --dark-brown: #3e3127;
+            --text-primary: #2d2520;
+            --text-secondary: #5f5449;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--text-primary);
+            background: var(--cream);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--warm-white) 0%, var(--beige) 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 24px;
+            color: var(--dark-brown);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero .subtitle {
+            font-size: 24px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        
+        .hero .tagline {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--terracotta);
+            color: white;
+            padding: 18px 48px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(204, 139, 101, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(204, 139, 101, 0.4);
+            background: #b87955;
+        }
+        
+        .hero-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+            text-align: left;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        
+        .benefit-icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            color: var(--terracotta);
+        }
+        
+        .benefit-item strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--dark-brown);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+        
+        section:nth-child(even) {
+            background: var(--warm-white);
+        }
+        
+        .section-title {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 16px;
+            color: var(--dark-brown);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Problem Cards */
+        .problem-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 20px;
+            color: var(--terracotta);
+        }
+        
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: var(--dark-brown);
+        }
+        
+        .card p {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+        
+        /* Quote */
+        .quote {
+            background: var(--beige);
+            padding: 32px;
+            border-radius: 16px;
+            border-left: 4px solid var(--terracotta);
+            font-style: italic;
+            color: var(--text-primary);
+            margin: 40px 0;
+        }
+        
+        .quote cite {
+            display: block;
+            margin-top: 16px;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        
+        /* Agitation Section */
+        .agitation-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 40px;
+        }
+        
+        .timeline h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--terracotta);
+        }
+        
+        .timeline ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .timeline li {
+            padding: 12px 0 12px 32px;
+            position: relative;
+            color: var(--text-secondary);
+        }
+        
+        .timeline li::before {
+            content: '✗';
+            position: absolute;
+            left: 0;
+            color: var(--terracotta);
+            font-weight: bold;
+        }
+        
+        /* Solution Section */
+        .solution-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .solution-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin: 40px 0;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 32px 24px;
+            background: white;
+            border-radius: 16px;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--terracotta);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .step h4 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: var(--dark-brown);
+        }
+        
+        .benefits-list {
+            list-style: none;
+            margin: 32px 0;
+        }
+        
+        .benefits-list li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            font-size: 18px;
+        }
+        
+        .benefits-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--warm-green);
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        /* Social Proof */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+        }
+        
+        .testimonial-stars {
+            color: var(--gold);
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--dark-brown);
+        }
+        
+        /* Stack Section */
+        .stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .stack-category h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--terracotta);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .stack-list {
+            list-style: none;
+        }
+        
+        .stack-list li {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--beige);
+        }
+        
+        .stack-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .stack-list strong {
+            display: block;
+            color: var(--dark-brown);
+            margin-bottom: 4px;
+        }
+        
+        .value-tag {
+            display: inline-block;
+            background: var(--beige);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+        
+        .total-value {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            background: var(--beige);
+            border-radius: 16px;
+        }
+        
+        .total-value .old-price {
+            font-size: 28px;
+            color: var(--text-secondary);
+            text-decoration: line-through;
+            margin-bottom: 12px;
+        }
+        
+        .total-value .new-price {
+            font-size: 48px;
+            color: var(--terracotta);
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Transformation */
+        .transformation-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 40px;
+        }
+        
+        .before-after {
+            padding: 40px;
+            border-radius: 16px;
+        }
+        
+        .before {
+            background: #f5f5f5;
+        }
+        
+        .after {
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+        }
+        
+        .before-after h3 {
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+        
+        .before h3 {
+            color: #666;
+        }
+        
+        .after h3 {
+            color: var(--warm-green);
+        }
+        
+        .before-after ul {
+            list-style: none;
+        }
+        
+        .before-after li {
+            padding: 12px 0;
+            padding-left: 32px;
+            position: relative;
+        }
+        
+        .before li::before {
+            content: '😰';
+            position: absolute;
+            left: 0;
+        }
+        
+        .after li::before {
+            content: '✨';
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Process Timeline */
+        .process-timeline {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        
+        .process-step {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+            border-left: 4px solid var(--terracotta);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+        }
+        
+        .process-step h3 {
+            font-size: 24px;
+            color: var(--terracotta);
+            margin-bottom: 16px;
+        }
+        
+        .process-step h4 {
+            font-size: 20px;
+            color: var(--dark-brown);
+            margin: 24px 0 12px;
+        }
+        
+        .process-step ul {
+            list-style: none;
+            padding-left: 24px;
+        }
+        
+        .process-step li {
+            padding: 8px 0;
+            position: relative;
+        }
+        
+        .process-step li::before {
+            content: '→';
+            position: absolute;
+            left: -24px;
+            color: var(--terracotta);
+        }
+        
+        /* About Section */
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 40px;
+        }
+        
+        .about-card {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+        }
+        
+        .about-card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--terracotta);
+        }
+        
+        .about-card ul {
+            list-style: none;
+        }
+        
+        .about-card li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+        }
+        
+        .about-card li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--terracotta);
+            font-size: 24px;
+        }
+        
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 16px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: 24px;
+            background: white;
+            border: none;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark-brown);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: var(--cream);
+        }
+        
+        .faq-icon {
+            font-size: 24px;
+            color: var(--terracotta);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 24px;
+            color: var(--text-secondary);
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 24px 24px;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        /* Guarantee Section */
+        .guarantee-box {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            padding: 48px;
+            border-radius: 16px;
+            max-width: 800px;
+            margin: 40px auto;
+            border: 2px solid var(--terracotta);
+        }
+        
+        .guarantee-box h3 {
+            font-size: 28px;
+            margin-bottom: 24px;
+            color: var(--dark-brown);
+            text-align: center;
+        }
+        
+        .guarantee-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-top: 32px;
+        }
+        
+        .guarantee-item h4 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: var(--terracotta);
+        }
+        
+        /* Pricing Section */
+        .pricing-card {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 48px;
+            border-radius: 20px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.1);
+            border: 3px solid var(--terracotta);
+            transform: scale(1.02);
+        }
+        
+        .pricing-card h3 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 24px;
+            color: var(--dark-brown);
+        }
+        
+        .price {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .price-amount {
+            font-size: 56px;
+            font-weight: bold;
+            color: var(--terracotta);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .price-period {
+            font-size: 20px;
+            color: var(--text-secondary);
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+        
+        .pricing-features li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            font-size: 16px;
+        }
+        
+        .pricing-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--warm-green);
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        .payment-options {
+            background: var(--cream);
+            padding: 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+        }
+        
+        .payment-options h4 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: var(--dark-brown);
+        }
+        
+        .payment-options ul {
+            list-style: none;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        .payment-options li {
+            padding: 4px 0;
+        }
+        
+        /* Urgency Section */
+        .urgency-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 48px;
+            border-radius: 16px;
+            max-width: 700px;
+            margin: 40px auto;
+            text-align: center;
+            border: 2px dashed var(--terracotta);
+        }
+        
+        .urgency-box h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--dark-brown);
+        }
+        
+        .availability {
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--terracotta);
+            margin: 24px 0;
+        }
+        
+        /* Final CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, var(--terracotta) 0%, #b87955 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 42px;
+            margin-bottom: 24px;
+            color: white;
+        }
+        
+        .final-cta p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .final-cta .cta-button {
+            background: white;
+            color: var(--terracotta);
+        }
+        
+        .final-cta .cta-button:hover {
+            background: var(--cream);
+        }
+        
+        .contact-info {
+            margin-top: 40px;
+            font-size: 18px;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin: 8px 16px;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-brown);
+            color: white;
+            padding: 60px 0 32px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+            z-index: 9999;
+            display: none;
+            animation: slideUp 0.4s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        
+        @keyframes slideDown {
+            from { transform: translateY(0); }
+            to { transform: translateY(100%); }
+        }
+        
+        .cookie-content {
+            padding: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .cookie-content h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: var(--dark-brown);
+        }
+        
+        .cookie-content p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        
+        .cookie-content a {
+            color: var(--terracotta);
+            text-decoration: underline;
+        }
+        
+        .cookie-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .cookie-buttons button {
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: 2px solid var(--terracotta);
+            background: white;
+            color: var(--terracotta);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-buttons button:hover {
+            background: var(--terracotta);
+            color: white;
+        }
+        
+        #cookie-accept-all {
+            background: var(--terracotta);
+            color: white;
+        }
+        
+        #cookie-accept-all:hover {
+            background: #b87955;
+        }
+        
+        #cookie-settings-panel {
+            padding: 32px;
+        }
+        
+        #cookie-settings-panel h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--dark-brown);
+        }
+        
+        #cookie-settings-panel label {
+            display: block;
+            padding: 16px;
+            margin-bottom: 12px;
+            background: var(--cream);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        #cookie-settings-panel label:hover {
+            background: var(--beige);
+        }
+        
+        #cookie-settings-panel input[type="checkbox"] {
+            margin-right: 12px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero .subtitle {
+                font-size: 20px;
+            }
+            
+            .section-title {
+                font-size: 32px;
+            }
+            
+            .agitation-grid,
+            .transformation-grid,
+            .about-grid,
+            .guarantee-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .hero-benefits {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-button {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .cookie-buttons {
+                flex-direction: column;
+            }
+            
+            .cookie-buttons button {
+                width: 100%;
+            }
+        }
+        
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="fade-in">Przestań walczyć z fryzurą przed każdym ważnym spotkaniem</h1>
+            <p class="subtitle fade-in">Twoja dedykowana stylistka. Premium jakość. Priorytetowe terminy. Zero niespodzianek.</p>
+            <p class="tagline fade-in">Perfekcyjnie ułożone włosy przez cały miesiąc - bez stresu, bez rotacji fryzjerów, bez zmarnowanego czasu.</p>
+            <a href="#pricing" class="cta-button fade-in">Zarezerwuj konsultację - 20 zł</a>
+            
+            <div class="hero-benefits fade-in">
+                <div class="benefit-item">
+                    <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <div>
+                        <strong>Twoja stylistka która Cię zna</strong>
+                        <p>Nie musisz tłumaczyć od zera</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <div>
+                        <strong>Włosy które wyglądają świetnie przez 4-6 tygodni</strong>
+                        <p>Kolor, fryzura, zdrowie</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <svg class="benefit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <div>
+                        <strong>VIP treatment</strong>
+                        <p>Priorytetowe terminy, wieczory, weekendy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Problem Section -->
+    <section id="problem">
+        <div class="container">
+            <h2 class="section-title fade-in">Czy to brzmi znajomo?</h2>
+            
+            <div class="problem-cards">
+                <div class="card fade-in">
+                    <svg class="card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    <h3>Nie masz czasu na eksperymenty</h3>
+                    <p>Każda wizyta musi być "na bank", bo Twój wizerunek to część Twojej marki. Nie możesz ryzykować przed ważnym spotkaniem.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <svg class="card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    <h3>Męczy Cię rotacja fryzjerów</h3>
+                    <p>Ciągle ktoś nowy, ciągle musisz tłumaczyć od początku, ciągle ryzykujesz. Chcesz SWOJĄ fryzjerkę która Cię zna.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <svg class="card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    <h3>Czujesz się jak numer w kolejce</h3>
+                    <p>Salony "na taśmie" gdzie fryzjerka nie pamięta Cię, nie ma dla Ciebie czasu, goni do następnej klientki.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <svg class="card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    <h3>Włosy cierpią mimo wydanych pieniędzy</h3>
+                    <p>Kolor wypłukuje się po 2 tygodniach, fryzura nie trzyma, włosy wyglądają źle po tygodniu.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <svg class="card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    <h3>Nie wiesz komu zaufać</h3>
+                    <p>Widziałaś już zbyt wiele "przeciętnych" efektów, a Ty potrzebujesz perfekcji. Premium jakości. Pewności.</p>
+                </div>
+            </div>
+            
+            <div class="quote fade-in">
+                "Nie mam czasu na eksperymenty. Potrzebuję kogoś kto wie co robi i zrobi to dobrze za pierwszym razem. Mój wizerunek to część mojej marki."
+                <cite>— Anna, 42 lata, właścicielka agencji marketingowej</cite>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Agitation Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title fade-in">Co się stanie jeśli nic nie zmienisz?</h2>
+            
+            <div class="agitation-grid">
+                <div class="timeline fade-in">
+                    <h3>Za 3 miesiące:</h3>
+                    <ul>
+                        <li>Kolejne rozczarowanie po wizycie u "nowej fryzjerki" która nie zrozumiała czego chcesz</li>
+                        <li>Kolejny raz odwołujesz ważne spotkanie bo włosy wyglądają źle</li>
+                        <li>Kolejne 300-800 zł wydane w miejscu które Cię nie docenia</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline fade-in">
+                    <h3>Za rok:</h3>
+                    <ul>
+                        <li>Straciłaś setki godzin na szukanie "tej właściwej" fryzjerki</li>
+                        <li>Wydałaś 8000-15000 zł na wizyty które nie spełniły oczekiwań</li>
+                        <li>Włosy są w gorszym stanie niż rok temu</li>
+                        <li>Wciąż nie masz "swojego miejsca" gdzie czujesz się VIPem</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-size: 20px; margin-top: 40px; font-style: italic; color: var(--text-primary);" class="fade-in">
+                To nie musi tak wyglądać.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Solution Section -->
+    <section id="solution">
+        <div class="container">
+            <h2 class="section-title fade-in">Przedstawiamy: Executive Hair Care</h2>
+            <p class="section-subtitle fade-in">Miesięczna subskrypcja premium dla kobiet które wiedzą czego chcą.</p>
+            
+            <div class="solution-content">
+                <p style="text-align: center; font-size: 18px; margin-bottom: 40px; color: var(--text-secondary);" class="fade-in">
+                    To nie jest kolejna "karta rabatowa" ani "pakiet wizyt". To <strong>kompletny system obsługi Twoich włosów</strong>, gdzie Ty się nie martwisz - my dbamy o wszystko.
+                </p>
+                
+                <div class="solution-steps">
+                    <div class="step fade-in">
+                        <div class="step-number">1</div>
+                        <h4>Konsultacja</h4>
+                        <p>Poznajemy się. Ty opowiadasz o swoich włosach, my pokazujemy portfolio. 20 zł, 10 min.</p>
+                    </div>
+                    
+                    <div class="step fade-in">
+                        <div class="step-number">2</div>
+                        <h4>Pierwsza wizyta</h4>
+                        <p>Pełna transformacja: koloryzacja + strzyżenie + pielęgnacja. Od teraz jesteś VIPem.</p>
+                    </div>
+                    
+                    <div class="step fade-in">
+                        <div class="step-number">3</div>
+                        <h4>Regularne wizyty</h4>
+                        <p>Co 4-6 tygodni. Twoja stylistka wie co robić. Nie musisz nic tłumaczyć.</p>
+                    </div>
+                </div>
+                
+                <h3 style="font-size: 32px; text-align: center; margin: 60px 0 30px; color: var(--dark-brown);" class="fade-in">Rezultat:</h3>
+                
+                <ul class="benefits-list fade-in">
+                    <li>Włosy które wyglądają jak po salonowym blow dry przez 4-6 tygodni - kolor trzyma się długo, fryzura układa się bez wysiłku</li>
+                    <li>5-10 minut rano zamiast 30-40 minut walki z włosami przed spotkaniem</li>
+                    <li>Zero stresu przed ważnymi eventami - Twoje włosy ZAWSZE wyglądają perfekcyjnie</li>
+                    <li>Pewność i pewność siebie - wiesz że Twój wizerunek jest dopięty na ostatni guzik</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Proof -->
+    <section>
+        <div class="container">
+            <h2 class="section-title fade-in">Kobiety które już wiedziały, że to działa</h2>
+            
+            <div class="testimonials">
+                <div class="testimonial fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Wcześniej chodziłam gdzieś indziej na przedłużanie włosów, lecz musiałam zmienić. Bałam się gdzie kolwiek pójść bo ciężko było mi zaufać. Przyszłam do Studio Well z polecenia i uważam że jest godny tego polecenia. Sara potrafi świetnie dopasować kolor do włosów, do tego świetna atmosfera w salonie. Polecam!"</p>
+                    <div class="testimonial-author">Maria, 38 lat - Właścicielka kancelarii prawnej</div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Skorzystałam z usługi strzyżenia włosów i jestem bardzo zadowolona z efektu. Moje włosy świetnie się układają, a Pani Sara doskonale dobrała odpowiednią pielęgnację do ich obecnych potrzeb. Cała wizyta przebiegła w miłej atmosferze, a profesjonalizm i umiejętności Pani Sary były na najwyższym poziomie. Zdecydowanie polecam!"</p>
+                    <div class="testimonial-author">Anna P. - Managerka</div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Pani Julia jest niesamowita – to niezwykle profesjonalna fryzjerka z ogromnym doświadczeniem. Jednak to, co wyróżnia ją najbardziej, to jej indywidualne podejście do klienta i wyjątkowa troska o włosy. Pani Julia przeprowadziła dla mnie metamorfozę w sposób maksymalnie delikatny, za co jestem jej ogromnie wdzięczna."</p>
+                    <div class="testimonial-author">Julia - Klientka</div>
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-size: 18px; margin-top: 40px; font-weight: 600; color: var(--terracotta);" class="fade-in">
+                4.9 gwiazdek na Booksy | 1811 opinii | 10 lat w Krakowie
+            </p>
+        </div>
+    </section>
+    
+    <!-- Stack Section -->
+    <section id="stack">
+        <div class="container">
+            <h2 class="section-title fade-in">Executive Hair Care - co zawiera subskrypcja</h2>
+            
+            <div class="stack-grid">
+                <div class="stack-category fade-in">
+                    <h3>💎 Kompleksowa obsługa włosów</h3>
+                    <div class="stack-list">
+                        <li>
+                            <strong>Koloryzacja premium</strong>
+                            Jednolita / tonowanie / krycie odrostów. Produkty: Schwarzkopf Professional, Miriam Quevedo, Authentic Beauty Concept.
+                            <span class="value-tag">Wartość: 400 zł</span>
+                        </li>
+                        <li>
+                            <strong>Strzyżenie przy każdej wizycie</strong>
+                            Fryzura zawsze świeża, dopięta. Techniki światowego poziomu - szkolenia USA 2024/2025.
+                            <span class="value-tag">Wartość: 185 zł</span>
+                        </li>
+                        <li>
+                            <strong>Pielęgnacja Fibre Clinix lub ABC</strong>
+                            Włosy zdrowe, lśniące, mocne. Dobieramy odpowiednią pielęgnację co wizytę.
+                            <span class="value-tag">Wartość: 130 zł</span>
+                        </li>
+                    </div>
+                </div>
+                
+                <div class="stack-category fade-in">
+                    <h3>👑 VIP Treatment</h3>
+                    <div class="stack-list">
+                        <li>
+                            <strong>Twoja dedykowana stylistka</strong>
+                            Poznaje Twoje włosy, lifestyle, preferencje. Nie musisz tłumaczyć od zera.
+                        </li>
+                        <li>
+                            <strong>Priorytetowe terminy</strong>
+                            Wieczory (do 20:00), weekendy (sobota do 16:00), dogodne godziny.
+                        </li>
+                        <li>
+                            <strong>Przypomnienia SMS/email</strong>
+                            Organizujemy wszystko za Ciebie. Nie musisz pamiętać.
+                        </li>
+                        <li>
+                            <strong>Blokowane terminy</strong>
+                            Wizyta bez pośpiechu. Pełna uwaga tylko dla Ciebie.
+                        </li>
+                    </div>
+                    <span class="value-tag">Wartość: ~500 zł/miesiąc</span>
+                </div>
+                
+                <div class="stack-category fade-in">
+                    <h3>🎁 Home Care Kit</h3>
+                    <div class="stack-list">
+                        <li>
+                            <strong>Zestaw produktów premium</strong>
+                            Schwarzkopf Professional, Miriam Quevedo, ABC - dobrane do Twoich potrzeb.
+                        </li>
+                        <li>
+                            <strong>Instrukcja stylizacji</strong>
+                            Jak ułożyć włosy w 5-10 minut rano - proste, szybkie, efektowne.
+                        </li>
+                    </div>
+                    <span class="value-tag">Wartość: ~200 zł/miesiąc</span>
+                </div>
+                
+                <div class="stack-category fade-in">
+                    <h3>💫 Spokój i przewidywalność</h3>
+                    <div class="stack-list">
+                        <li>Stała miesięczna opłata - wiesz ile płacisz, zero niespodzianek</li>
+                        <li>Stałość obsługi - ta sama osoba która Cię zna</li>
+                        <li>Efekt który trzyma się tygodniami - nie musisz martwić się włosami przed ważnym spotkaniem</li>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="total-value fade-in">
+                <div class="old-price">ŁĄCZNA WARTOŚĆ: 1400-1550 PLN/miesiąc</div>
+                <div class="new-price">PŁACISZ: 800 PLN/miesiąc</div>
+                <p style="margin-top: 20px; font-size: 18px; color: var(--text-secondary);">
+                    OSZCZĘDZASZ: 600-750 PLN/miesiąc + czas + nerwy + pewność
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Transformation -->
+    <section>
+        <div class="container">
+            <h2 class="section-title fade-in">Jak zmieni się Twoje życie?</h2>
+            
+            <div class="transformation-grid">
+                <div class="before before-after fade-in">
+                    <h3>PRZED Executive Hair Care:</h3>
+                    <ul>
+                        <li>Stres przed każdym ważnym spotkaniem - "czy moje włosy wyglądają dobrze?"</li>
+                        <li>30-40 minut walki z włosami każdego ranka</li>
+                        <li>800-1200 zł co 6 tygodni w salonach które nie spełniają oczekiwań</li>
+                        <li>Rozczarowanie po kolejnej wizycie u "nowej fryzjerki"</li>
+                        <li>Ciągłe szukanie "tej właściwej"</li>
+                        <li>Włosy w złym stanie - od eksperymentów i nierównej jakości</li>
+                    </ul>
+                </div>
+                
+                <div class="after before-after fade-in">
+                    <h3>PO Executive Hair Care:</h3>
+                    <ul>
+                        <li>Pewność siebie - Twoje włosy ZAWSZE wyglądają perfekcyjnie</li>
+                        <li>5-10 minut rano - włosy układają się bez wysiłku</li>
+                        <li>800 zł/miesiąc przewidywalnie - zero niespodzianek</li>
+                        <li>Zadowolenie po każdej wizycie - Twoja stylistka wie czego chcesz</li>
+                        <li>"Swoje miejsce" - czujesz się VIPem</li>
+                        <li>Włosy w topowej kondycji - zdrowe, lśniące, mocne</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="quote fade-in" style="margin-top: 40px;">
+                "Wiem że premium jakość kosztuje. Nie szukam najtaniej - szukam najlepiej. Chcę włosów które wyglądają świetnie przez 6 tygodni, nie 3 dni."
+                <cite>— Klientka Karolina</cite>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process -->
+    <section>
+        <div class="container">
+            <h2 class="section-title fade-in">Jak wygląda współpraca?</h2>
+            
+            <div class="process-timeline">
+                <div class="process-step fade-in">
+                    <h3>KROK 1: Konsultacja (20 zł, 10 min)</h3>
+                    <h4>Tydzień 0: Poznajemy się</h4>
+                    <p>Umów się na krótką konsultację w Studio Well. Opowiadasz o swoich włosach, lifestyle, oczekiwaniach. My pokazujemy portfolio, omawiamy plan.</p>
+                    <h4>Co się dzieje:</h4>
+                    <ul>
+                        <li>Poznajemy historię Twoich włosów</li>
+                        <li>Omawiamy Twoje potrzeby i oczekiwania</li>
+                        <li>Pokazujemy portfolio (Instagram, Booksy 4.9★)</li>
+                        <li>Sprawdzamy dostępne terminy</li>
+                        <li>Decydujesz czy to dla Ciebie</li>
+                    </ul>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <h3>KROK 2: Pierwsza wizyta transformacyjna</h3>
+                    <h4>Tydzień 1: Pełna transformacja</h4>
+                    <p>Czas: 2,5-3 godziny (blokowany termin, pełna uwaga tylko dla Ciebie)</p>
+                    <h4>Co dostajesz:</h4>
+                    <ul>
+                        <li>Premium koloryzację (Schwarzkopf Professional)</li>
+                        <li>Strzyżenie (techniki światowego poziomu)</li>
+                        <li>Pielęgnację (Fibre Clinix lub ABC)</li>
+                        <li>Home care kit (produkty premium)</li>
+                        <li>Instrukcję stylizacji (5-10 min rano)</li>
+                    </ul>
+                    <p style="margin-top: 16px; font-weight: 600;">Od tej wizyty jesteś VIPem. Masz swoją stylistkę. Masz priorytetowe terminy.</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <h3>KROK 3: Regularne wizyty co 4-6 tygodni</h3>
+                    <h4>Miesiąc 2-3-4...: Zero stresu</h4>
+                    <p>Od drugiej wizyty już wiesz że jesteś w dobrych rękach. Twoja stylistka wie co robić. Nie musisz nic tłumaczyć.</p>
+                    <h4>Przed wizytą:</h4>
+                    <ul>
+                        <li>Przypomnienie SMS/email 2 dni wcześniej</li>
+                        <li>Potwierdzenie terminu</li>
+                        <li>Możliwość zmiany terminu (priorytet dla VIP)</li>
+                    </ul>
+                    <h4>Po 3 miesiącach masz:</h4>
+                    <ul>
+                        <li>"Swoje miejsce" gdzie czujesz się VIPem</li>
+                        <li>Swoją stylistkę która Cię zna</li>
+                        <li>Włosy w topowej kondycji</li>
+                        <li>Pewność siebie przed każdym spotkaniem</li>
+                        <li>Oszczędność 2-3 godzin miesięcznie (mniej walki z włosami)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About -->
+    <section>
+        <div class="container">
+            <h2 class="section-title fade-in">Dlaczego Studio Well?</h2>
+            
+            <div class="about-content">
+                <p style="text-align: center; font-size: 18px; margin-bottom: 40px; color: var(--text-secondary);" class="fade-in">
+                    10 lat doświadczenia w prowadzeniu salonu premium w Krakowie. Szkolenia u światowych autorytetów. Umowy partnerskie z markami premium. Team na najwyższym poziomie.
+                </p>
+                
+                <div class="about-grid">
+                    <div class="about-card fade-in">
+                        <h3>Sara Batista Pereira</h3>
+                        <p style="margin-bottom: 16px; color: var(--text-secondary);">Właścicielka i Kolorystka</p>
+                        <ul>
+                            <li>10 lat doświadczenia (od 2016)</li>
+                            <li>Szkolenia USA 2024/2025</li>
+                            <li>BTC Show, Pro Congress Loreal</li>
+                            <li>Koloryzacja TOP 10%</li>
+                            <li>Specjalizacja: Airtouch, Balayage, Blendowanie siwizny</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about-card fade-in">
+                        <h3>Team premium</h3>
+                        <ul>
+                            <li>4 stylistki z kilkuletnim doświadczeniem</li>
+                            <li>1 masażysta (Head Spa, wellness)</li>
+                            <li>1 menadżerka (organizacja, VIP)</li>
+                            <li>Wysoka klasa i kultura osobista</li>
+                            <li>Wyczucie stylu</li>
+                            <li>Rozwiązania światowego poziomu</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 40px; text-align: center;" class="fade-in">
+                    <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 12px;">
+                        <strong>Umowy partnerskie:</strong> Schwarzkopf Professional, Miriam Quevedo, Authentic Beauty Concept
+                    </p>
+                    <p style="font-size: 18px; color: var(--text-secondary);">
+                        <strong>Lokalizacja:</strong> Bolesława Limanowskiego 14, 30-534 Kraków, Podgórze
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title fade-in">Najczęściej zadawane pytania</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Ile trwa jedna wizyta?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>2,5-3 godziny (koloryzacja + strzyżenie + pielęgnacja + stylizacja). Blokujemy termin bez pośpiechu - pełna uwaga tylko dla Ciebie.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Czy będę miała zawsze tę samą fryzjerkę?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>TAK. W Studio Well każda klientka Executive Hair Care ma przypisaną swoją stylistkę która poznaje jej włosy, styl życia i preferencje. Budujemy relacje długoterminowe - to nie jest salon "na taśmę".</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Co jeśli nie będę zadowolona z efektu?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Gwarancja satysfakcji - jeśli z jakiegokolwiek powodu nie jesteś zadowolona, poprawiamy w ciągu 7 dni bez dodatkowych kosztów. Plus gwarancja jakości - włosy wyglądają świetnie przez minimum 4 tygodnie.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Czy to nie jest zbyt drogie dla regularnych wizyt?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Porównaj: wydajesz teraz ~800-1200 zł co 6 tygodni w salonach które nie spełniają oczekiwań. To 1600-2400 zł na 3 miesiące. Z Executive Hair Care płacisz 2400 zł (3x800 zł) i dostajesz: dedykowaną stylistkę, priorytetowe terminy, home care kit, gwarancje, VIP treatment. Nie płacisz więcej - płacisz mądrzej.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Nie mam czasu na 3-godzinne wizyty, pracuję non-stop
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Dlatego organizujemy wizyty elastycznie - wieczory (do 20:00), weekendy (sobota do 16:00), a dla klientek Executive Hair Care priorytetowe terminy. Plus planujemy usługi tak żeby maksymalnie wydłużyć efekt i minimalizować częstotliwość wizyt (co 4-6 tygodni zamiast co 3-4 tygodnie).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Co jeśli w danym miesiącu nie będę potrzebować wizyty? (np. urlop)
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Subskrypcja trwa minimum 3 miesiące, możliwość rezygnacji z 30-dniowym wypowiedzeniem. Jeśli potrzebujesz przesunąć wizytę (urlop, podróż służbowa) - daj znać z wyprzedzeniem, ustalimy nowy termin.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Jak szybko zobaczę rezultaty?
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Od pierwszej wizyty. Wychodzisz z salonu z perfekcyjnie ułożonymi włosami. Kolor trzyma się 4-6 tygodni. Fryzura układa się bez wysiłku przez 4-6 tygodni. Zero czekania na efekty - rezultaty od razu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Guarantee -->
+    <section>
+        <div class="container">
+            <h2 class="section-title fade-in">Podwójna Gwarancja</h2>
+            
+            <div class="guarantee-box fade-in">
+                <h3>Zero ryzyka. Pełna pewność.</h3>
+                
+                <div class="guarantee-grid">
+                    <div class="guarantee-item">
+                        <h4>Gwarancja Satysfakcji</h4>
+                        <p>Jeśli z jakiegokolwiek powodu nie jesteś zadowolona z efektu - poprawiamy w ciągu 7 dni, bez dodatkowych kosztów. Nie musisz tłumaczyć. Nie musisz argumentować.</p>
+                    </div>
+                    
+                    <div class="guarantee-item">
+                        <h4>Gwarancja Jakości</h4>
+                        <p>Twoje włosy wyglądają świetnie przez minimum 4 tygodnie po wizycie. Kolor trzyma się długo. Fryzura układa się bez wysiłku. Włosy są zdrowe i błyszczące.</p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 24px; font-size: 14px; color: var(--text-secondary);">
+                    <strong>Warunki:</strong> Stosowanie produktów home care które polecamy, kontakt w ciągu 7 dni (satysfakcja) lub 4 tygodni (jakość - tonowanie gratis).
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="container">
+            <h2 class="section-title fade-in">Inwestycja</h2>
+            
+            <div class="pricing-card fade-in">
+                <h3>EXECUTIVE HAIR CARE</h3>
+                
+                <div class="price">
+                    <div class="price-amount">800 PLN</div>
+                    <div class="price-period">/ miesiąc</div>
+                </div>
+                
+                <ul class="pricing-features">
+                    <li>Koloryzacja premium (jednolita/tonowanie/odrosty) co 4-6 tygodni</li>
+                    <li>Strzyżenie przy każdej wizycie</li>
+                    <li>Pielęgnacja Fibre Clinix lub Authentic Beauty Concept</li>
+                    <li>Twoja dedykowana stylistka</li>
+                    <li>Priorytetowe terminy (wieczory, weekendy)</li>
+                    <li>Home care kit (produkty premium)</li>
+                    <li>Przypomnienia SMS/email + organizacja wizyt</li>
+                    <li>Blokowane terminy bez pośpiechu</li>
+                    <li>Gwarancja satysfakcji (poprawa w 7 dni)</li>
+                    <li>Gwarancja jakości (efekt min. 4 tygodnie)</li>
+                </ul>
+                
+                <div class="payment-options">
+                    <h4>Model płatności (do wyboru):</h4>
+                    <ul>
+                        <li>Miesięczny: 800 zł co miesiąc</li>
+                        <li>Kwartalny: 2400 zł (3 miesiące) z góry</li>
+                        <li>Roczny: 9600 zł (12 miesięcy) z góry - możliwość negocjacji rabatu</li>
+                    </ul>
+                </div>
+                
+                <p style="text-align: center; margin: 24px 0; font-size: 18px; color: var(--text-primary);">
+                    <strong>ŁĄCZNA WARTOŚĆ USŁUG: 1400-1550 PLN/miesiąc</strong><br>
+                    <span style="color: var(--terracotta); font-weight: bold;">OSZCZĘDZASZ: 600-750 PLN/miesiąc</span>
+                </p>
+                
+                <a href="https://booksy.com/pl-pl/3119_well-hair-sara-batista-pereira_fryzjer_8820_krakow" class="cta-button" style="display: block; text-align: center; margin-top: 24px;">Zarezerwuj konsultację - 20 zł</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Urgency -->
+    <section>
+        <div class="container">
+            <h2 class="section-title fade-in">Ograniczona dostępność</h2>
+            
+            <div class="urgency-box fade-in">
+                <h3>Dlaczego limit?</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                    Executive Hair Care to subskrypcja VIP z dedykowaną stylistką i priorytetowymi terminami. Nie możemy obsłużyć więcej niż 25 klientek Executive w każdym miesiącu - bo każda z Was zasługuje na pełną uwagę i czas.
+                </p>
+                
+                <div class="availability">12 miejsc dostępnych w lutym 2026</div>
+                
+                <p style="color: var(--text-secondary); font-size: 16px;">
+                    Następne miejsca: marzec 2026 (lista rezerwowa)
+                </p>
+                
+                <ul style="list-style: none; margin-top: 24px; text-align: left; max-width: 500px; margin-left: auto; margin-right: auto;">
+                    <li style="padding: 8px 0;">✓ Gwarancja terminów - nie będziesz czekać tygodniami</li>
+                    <li style="padding: 8px 0;">✓ Gwarancja jakości - Twoja stylistka nie jest przepracowana</li>
+                    <li style="padding: 8px 0;">✓ Gwarancja uwagi - nie jesteś "kolejnym numerem"</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="fade-in">Gotowa na włosy które pracują 24/7?</h2>
+            <p class="fade-in">Przestań walczyć z fryzurą. Przestań ryzykować. Przestań wydawać pieniądze w miejscach które Cię nie doceniają.</p>
+            <p class="fade-in" style="font-size: 24px; font-weight: 600; margin-bottom: 40px;">Executive Hair Care to Twoje miejsce. Twoja stylistka. Twój spokój.</p>
+            
+            <a href="https://booksy.com/pl-pl/3119_well-hair-sara-batista-pereira_fryzjer_8820_krakow" class="cta-button fade-in">Zarezerwuj konsultację - 20 zł</a>
+            
+            <div class="contact-info fade-in">
+                <a href="tel:+48883866239">📱 +48 883 866 239</a>
+                <a href="mailto:kontakt@studiowell.pl">📧 kontakt@studiowell.pl</a>
+                <a href="https://studiowell.pl">🌐 studiowell.pl</a>
+                <a href="https://www.instagram.com/studiowell.hair/">📸 @studiowell.hair</a>
+            </div>
+            
+            <p class="fade-in" style="margin-top: 40px; font-size: 16px; opacity: 0.9;">
+                <strong>Studio Well</strong><br>
+                Bolesława Limanowskiego 14, 30-534 Kraków, Podgórze<br>
+                Pon-Pt: 09:00-20:00 | Sobota: 09:00-16:00
+            </p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Studio Well</h4>
+                    <p>Premium hair care dla wymagających kobiet biznesu w Krakowie.</p>
+                    <p style="margin-top: 16px;">
+                        Bolesława Limanowskiego 14<br>
+                        30-534 Kraków, Podgórze
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <a href="tel:+48883866239">+48 883 866 239</a>
+                    <a href="mailto:kontakt@studiowell.pl">kontakt@studiowell.pl</a>
+                    <a href="https://booksy.com/pl-pl/3119_well-hair-sara-batista-pereira_fryzjer_8820_krakow">Rezerwacja przez Booksy</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Godziny otwarcia</h4>
+                    <p>Poniedziałek - Piątek<br>09:00 - 20:00</p>
+                    <p style="margin-top: 8px;">Sobota<br>09:00 - 16:00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Social Media</h4>
+                    <a href="https://www.instagram.com/studiowell.hair/">Instagram - @studiowell.hair</a>
+                    <a href="https://www.instagram.com/studiowell.head/">Instagram - @studiowell.head</a>
+                    <a href="https://studiowell.pl">Strona www</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Studio Well by Sara Batista Pereira. Wszystkie prawa zastrzeżone.</p>
+                <p style="margin-top: 8px;">
+                    <a href="#" id="cookie-settings-link" style="color: rgba(255,255,255,0.6); text-decoration: underline;">Ustawienia cookies</a> |
+                    <a href="#" style="color: rgba(255,255,255,0.6); text-decoration: underline;">Polityka prywatności</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <h3>Używamy plików cookies</h3>
+            <p>Ta strona wykorzystuje pliki cookies, aby zapewnić najlepsze doświadczenie użytkownika. Korzystając z naszej strony, zgadzasz się na użycie cookies zgodnie z naszą polityką prywatności.</p>
+            <a href="#">Polityka prywatności</a>
+            
+            <div class="cookie-buttons">
+                <button id="cookie-accept-all">Akceptuj wszystkie</button>
+                <button id="cookie-essential">Tylko niezbędne</button>
+                <button id="cookie-settings">Ustawienia</button>
+            </div>
+        </div>
+        
+        <div id="cookie-settings-panel" style="display:none;">
+            <h4>Ustawienia cookies</h4>
+            
+            <label>
+                <input type="checkbox" checked disabled>
+                <strong>Niezbędne</strong> (wymagane) - Pliki cookies niezbędne do prawidłowego działania strony
+            </label>
+            
+            <label>
+                <input type="checkbox" id="cookie-analytics">
+                <strong>Analityczne</strong> - Google Analytics, statystyki odwiedzin
+            </label>
+            
+            <label>
+                <input type="checkbox" id="cookie-marketing">
+                <strong>Marketingowe</strong> - Facebook Pixel, reklamy targetowane
+            </label>
+            
+            <label>
+                <input type="checkbox" id="cookie-functional">
+                <strong>Funkcjonalne</strong> - Czat, preferencje użytkownika
+            </label>
+            
+            <div class="cookie-buttons">
+                <button id="cookie-save-settings">Zapisz ustawienia</button>
+                <button id="cookie-back">Wróć</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Cookie Banner Logic
+        const consent = localStorage.getItem('cookieConsent');
+        if (!consent) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+        
+        document.getElementById('cookie-accept-all').onclick = () => {
+            localStorage.setItem('cookieConsent', JSON.stringify({
+                essential: true,
+                analytics: true,
+                marketing: true,
+                functional: true,
+                timestamp: Date.now()
+            }));
+            hideBanner();
+        };
+        
+        document.getElementById('cookie-essential').onclick = () => {
+            localStorage.setItem('cookieConsent', JSON.stringify({
+                essential: true,
+                analytics: false,
+                marketing: false,
+                functional: false,
+                timestamp: Date.now()
+            }));
+            hideBanner();
+        };
+        
+        document.getElementById('cookie-settings').onclick = () => {
+            document.querySelector('.cookie-content').style.display = 'none';
+            document.getElementById('cookie-settings-panel').style.display = 'block';
+        };
+        
+        document.getElementById('cookie-back').onclick = () => {
+            document.querySelector('.cookie-content').style.display = 'block';
+            document.getElementById('cookie-settings-panel').style.display = 'none';
+        };
+        
+        document.getElementById('cookie-save-settings').onclick = () => {
+            const settings = {
+                essential: true,
+                analytics: document.getElementById('cookie-analytics').checked,
+                marketing: document.getElementById('cookie-marketing').checked,
+                functional: document.getElementById('cookie-functional').checked,
+                timestamp: Date.now()
+            };
+            localStorage.setItem('cookieConsent', JSON.stringify(settings));
+            hideBanner();
+        };
+        
+        function hideBanner() {
+            const banner = document.getElementById('cookie-banner');
+            banner.style.animation = 'slideDown 0.4s ease-out';
+            setTimeout(() => banner.style.display = 'none', 400);
+        }
+        
+        document.getElementById('cookie-settings-link').onclick = (e) => {
+            e.preventDefault();
+            localStorage.removeItem('cookieConsent');
+            location.reload();
+        };
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Fade In on Scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
