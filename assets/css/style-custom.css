@@ -1,0 +1,336 @@
+/* ================================================================
+   Studio Well — Custom Enhancements
+   Aesthetic fine-tuning · Mobile fixes · Language switcher
+   ================================================================ */
+
+/* ── Global Rendering ─────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+*, *::before, *::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Typography Refinements ──────────────────────────────── */
+.sec-title        { letter-spacing: -0.02em; }
+.sub-title        { letter-spacing: 0.14em; }
+.vs-btn           { letter-spacing: 0.07em; }
+.pack-title       { letter-spacing: 0.03em; }
+.price-title      { letter-spacing: -0.01em; }
+.team-name        { letter-spacing: -0.01em; }
+.breadcumb-title  { letter-spacing: -0.02em; }
+
+/* ── Smooth Transitions (global) ─────────────────────────── */
+a,
+button,
+.vs-btn,
+.icon-btn,
+.lang-btn,
+.vs-gallery-box,
+.gallery-thumb,
+.vs-trends-box,
+.team-masked,
+.vs-testimonial-box,
+.image-scale-hover,
+.banner-box,
+.card-box {
+  transition: all 0.26s ease !important;
+}
+
+/* ── Navigation underline effect ─────────────────────────── */
+.main-menu ul > li > a {
+  position: relative;
+}
+.main-menu ul > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.24s ease;
+  opacity: 0.6;
+}
+.main-menu ul > li > a:hover::after,
+.main-menu ul > li.active > a::after {
+  width: 100%;
+}
+
+/* ── Scroll-to-top ───────────────────────────────────────── */
+.scrollToTop { transition: transform 0.24s ease, opacity 0.24s ease !important; }
+.scrollToTop:hover { transform: translateY(-4px); }
+
+/* ── Gallery image zoom on hover ─────────────────────────── */
+.gallery-thumb,
+.vs-gallery-box { overflow: hidden; }
+
+.gallery-thumb img,
+.vs-gallery-box .gallery-img img {
+  transition: transform 0.42s ease !important;
+}
+.gallery-thumb:hover img,
+.vs-gallery-box:hover .gallery-img img {
+  transform: scale(1.05);
+}
+
+/* ── Image scale hover ───────────────────────────────────── */
+.image-scale-hover { overflow: hidden; }
+.image-scale-hover img {
+  transition: transform 0.42s ease !important;
+}
+.image-scale-hover:hover img { transform: scale(1.04); }
+
+/* ── Team card lift ──────────────────────────────────────── */
+.team-masked:hover { transform: translateY(-5px); }
+
+/* ── Trends/service cards ────────────────────────────────── */
+.vs-trends-box:hover { transform: translateY(-4px); }
+
+/* ── Banner subtle overlay refinement ────────────────────── */
+.banner-box .banner-content { transition: transform 0.3s ease; }
+.banner-box:hover .banner-content { transform: translateY(-3px); }
+
+/* ── Price table readability ─────────────────────────────── */
+.pack-table td { letter-spacing: 0.02em; line-height: 1.45; }
+
+/* ── Testimonial quote icon tint ─────────────────────────── */
+.vs-testimonial-box { position: relative; }
+
+/* ── Footer link refinement ──────────────────────────────── */
+.footer-wrapper a { transition: color 0.2s ease, opacity 0.2s ease; }
+
+/* ================================================================
+   LANGUAGE SWITCHER
+   ================================================================ */
+
+/* Desktop switcher (lives in header-top bar) */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 18px;
+  vertical-align: middle;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.65);
+  font-family: 'Syne', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 3px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+  line-height: 1.6;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.lang-btn:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.1);
+}
+.lang-btn.active {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255,255,255,0.18);
+}
+.lang-sep {
+  color: rgba(255,255,255,0.25);
+  font-size: 9px;
+  line-height: 1;
+  user-select: none;
+}
+
+/* Mobile switcher (inside mobile nav) */
+.mobile-lang-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 0 6px;
+  margin-top: 12px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.mobile-lang-switcher .lang-btn {
+  color: #444;
+  border-color: rgba(0,0,0,0.22);
+}
+.mobile-lang-switcher .lang-btn:hover,
+.mobile-lang-switcher .lang-btn.active {
+  color: #111;
+  border-color: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.07);
+}
+.mobile-lang-switcher .lang-sep {
+  color: rgba(0,0,0,0.2);
+}
+
+/* Standalone pages (subskrypcja / head-spa) floating toggle */
+.floating-lang {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 6px;
+  padding: 4px 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  backdrop-filter: blur(6px);
+}
+.floating-lang .lang-btn {
+  color: #444;
+  border-color: rgba(0,0,0,0.2);
+}
+.floating-lang .lang-btn.active {
+  color: #222;
+  border-color: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.07);
+}
+.floating-lang .lang-sep { color: rgba(0,0,0,0.2); }
+
+/* ================================================================
+   MOBILE FIXES — ≤ 575px (XS phones)
+   ================================================================ */
+@media (max-width: 575px) {
+
+  /* Header logo */
+  .header-logo img { max-height: 38px; width: auto; }
+
+  /* Breadcrumb */
+  .breadcumb-title { font-size: 1.75rem; }
+
+  /* Section title */
+  .sec-title { font-size: 1.55rem; }
+
+  /* Section spacing */
+  .space-top { padding-top: 36px !important; }
+  .space-negative-bottom { margin-bottom: -36px !important; }
+
+  /* Hero: ensure Zarezerwuj button is reachable */
+  .ls-slide .ls-l[data-ls] span { font-size: 18px !important; padding: 0 30px !important; line-height: 70px !important; }
+
+  /* About: collapse side images, center the main */
+  .vs-about-wrapper .row.g-3 .col-md-3 { display: none; }
+  .vs-about-wrapper .row.g-3 .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Price tables */
+  .pack-table { font-size: 12.5px; }
+  .pack-table td { padding: 7px 5px; }
+  .price-pack { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Price image */
+  .price-img { max-width: 90%; margin: 0 auto; }
+
+  /* Well Head naved images */
+  .naved-img .transform-banner img { max-height: 280px; object-fit: cover; width: 100%; }
+  .naved-thumb-slide { display: none !important; }
+
+  /* Banner boxes */
+  .banner-box { min-height: 200px; }
+  .banner-content { padding: 20px 16px !important; }
+  .banner-title { font-size: 1.4rem; }
+
+  /* Team: 1 per row by making carousel cards full width */
+  .vs-team-wrapper .slick-slide { min-width: 100% !important; }
+
+  /* Counters: 2 per row on xs */
+  .vs-counter-wrapper .col-sm-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  .vs-counter { padding: 16px 8px; }
+  .counter-number { font-size: 1.5rem; }
+
+  /* Gallery */
+  .vs-gallery-box { margin-bottom: 8px; }
+
+  /* Trends carousel */
+  .vs-trends-box .trends-body { padding: 10px 12px; }
+
+  /* Contact section */
+  .contact-info-table { font-size: 12.5px; }
+  .contact-info-table th, .contact-info-table td { padding: 5px 4px; }
+  .awwards-images img { max-width: 65px; height: auto; }
+
+  /* Team details pages */
+  .team-details-content { padding: 0; }
+
+  /* Transform banners in subpages */
+  .transform-banner img { max-height: 320px; object-fit: cover; width: 100%; }
+
+  /* Footer */
+  .footer-wrapper .widget_title { font-size: 0.95rem; }
+  .footer-table { font-size: 13px; }
+}
+
+/* ================================================================
+   MOBILE — ≤ 767px
+   ================================================================ */
+@media (max-width: 767px) {
+
+  /* Price: hide image on very small to reduce vertical scroll */
+  .vs-price-morp .col-md-8.col-lg-auto { display: none; }
+
+  /* Testimonials: force 1 per slide */
+  .vs-testimonial-wrapper .slick-slide { min-width: 100% !important; }
+
+  /* Well Head description */
+  .right-choose-wrapper .about-content { padding: 0 8px; }
+
+  /* Contact form padding */
+  .vs-contact-wrapper { padding-top: 36px !important; }
+  .ajax-contact .form-group { margin-bottom: 10px; }
+
+  /* Make pricing description text smaller */
+  .price-text { font-size: 13.5px; line-height: 1.55; }
+}
+
+/* ================================================================
+   TABLET — 576px – 991px
+   ================================================================ */
+@media (min-width: 576px) and (max-width: 991px) {
+
+  /* Price layout */
+  .price-img { max-width: 340px; margin: 0 auto; }
+
+  /* Team: aim for 2 visible items */
+  .vs-team-wrapper .slick-slide { min-width: 50% !important; }
+
+  /* Breadcrumb */
+  .breadcumb-title { font-size: 2rem; }
+
+  /* About content */
+  .about-content { padding: 0; }
+}
+
+/* ================================================================
+   TABLET + MOBILE — ≤ 991px
+   ================================================================ */
+@media (max-width: 991px) {
+
+  /* Spacing */
+  .space { padding-top: 44px !important; padding-bottom: 44px !important; }
+  .space-top { padding-top: 44px !important; }
+
+  /* Slick prev/next arrows less intrusive */
+  .slick-prev { left: 0 !important; }
+  .slick-next { right: 0 !important; }
+}
+
+/* ================================================================
+   PRICE IMAGE — show on medium+ screens
+   ================================================================ */
+@media (min-width: 768px) {
+  .vs-price-morp .col-md-8.col-lg-auto { display: block !important; }
+}
