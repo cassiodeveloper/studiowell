@@ -21,6 +21,8 @@
       'nav.headspa':      'Head SPA',
       'nav.book':         'Zarezerwuj',
       'nav.locate':       'Locate a Salon',
+      'nav.contact':      'Kontakt',
+      'nav.follow':       'Obserwuj',
 
       /* Hero slide 2 */
       'hero2.l1':   'Tutaj zaczyna się',
@@ -126,6 +128,8 @@
       'bc.training': 'Szkolenia',
       'bc.wellhair': 'Well Hair',
       'bc.wellhead': 'Well Head',
+      'bc.subscription': 'Subskrypcja',
+      'bc.headspa':   'Head SPA',
 
       /* About page */
       'ap.sub':   'O nas',
@@ -152,6 +156,28 @@
       'sp.about.iulia':    'O Iulii Stepanenko',
       'sp.about.karolina': 'O Karolinie Suder',
       'sp.about.julianna': 'O Juliannie Rucie',
+      'sp.bio.sara': 'Nazywam się Sara i jestem właścicielką Studio Well, które z pasją prowadzę od 2016 roku. Dzięki ciągłym szkoleniom oraz zdobywanemu doświadczeniu mój salon osiąga sukcesy na arenie międzynarodowej. Od 2018 roku dzielę się swoją wiedzą, prowadząc szkolenia dla fryzjerów oraz właścicieli salonów fryzjerskich, inspirując innych do rozwijania swojego rzemiosła.<br><br>W 2021 roku zostałam uhonorowana Małopolskim Znakiem Jakości, co umożliwia mi prowadzenie szkoleń współfinansowanych przez Unię Europejską, kończących się rejestrowanymi certyfikatami. Moim konikiem są koloryzacje, a szczególnie transformacje wizerunku, które dzięki dodatkowemu wykształceniu w charakteryzacji traktuję jako indywidualne projekty.<br><br>Prywatnie spełniam się jako mama małej Wandzi i mam rodzinę polsko-brazylijską, dzięki czemu każdego roku odkrywam fascynujące zakątki Brazylii. W wolnym czasie oddaję się pole dance, co pozwala mi kreatywnie wyrażać siebie i zachować równowagę.<br><br>Dla mnie ważny jest każdy klient jako całość – nie tylko włosy, ale również osobowość i potrzeby. Dzięki temu tworzę harmonijne metamorfozy, które podkreślają niepowtarzalny styl i urodę każdej osoby.',
+      'sp.bio.iulia': 'Witajcie! Nazywam się Iulia i od 10 lat z pasją pracuję jako fryzjerka. Moim priorytetem jest estetyka oraz dbałość o każdy szczegół, co przekłada się na satysfakcję moich klientów. W salonie stawiam na profesjonalizm i indywidualne podejście do każdej osoby. W wolnym czasie uwielbiam gotować oraz opiekować się roślinami, które dodają wyjątkowego uroku mojemu miejscu pracy. Zapraszam do odwiedzenia mnie w salonie, gdzie wspólnie stworzymy coś niezwykłego!',
+      'sp.bio.karolina': 'Mam na imię Karolina i od 15 lat z pasją wykonuję zawód fryzjerki. Specjalizuję się w koloryzacji oraz strzyżeniach damskich i męskich. Każda metamorfoza to dla mnie nowe wyzwanie, dlatego zawsze dążę do perfekcji i dbam o każdy detal. Praca z ludźmi to moja największa motywacja. Do każdego klienta podchodzę indywidualnie, słucham potrzeb i dobieram fryzurę tak, aby podkreślić naturalne piękno. Wierzę, że fryzura potrafi odmienić nie tylko wygląd, ale i samopoczucie. Nieustannie rozwijam umiejętności, śledzę trendy i uczestniczę w szkoleniach, aby oferować klientom to, co najlepsze.',
+      'sp.bio.julianna': 'W Studio Well zajmuję się marketingiem oraz tworzeniem zdjęć i filmów do portfolio salonu. Moją prawdziwą pasją jest fotografia, dzięki której staram się uchwycić wyjątkowość każdej branży, w tym fryzjerskiej sztuki. Wierzę, że obrazy mają moc przyciągania i opowiadania historii. Prywatnie jestem entuzjastką podróży, co pozwala mi szukać inspiracji w różnorodnych kulturach i miejscach. Uwielbiam również aranżować przestrzeń oraz organizować eventy, aby tworzyć niezapomniane doświadczenia.',
+
+      /* SEO */
+      'seo.index.title': 'Studio Well Kraków | Salon Fryzjerski, Head Spa, Szkolenia',
+      'seo.index.desc': 'Studio Well – nagradzany salon fryzjerski w Krakowie. Koloryzacja, strzyżenie, Head Spa, subskrypcja VIP. Zarezerwuj online.',
+      'seo.about.title': 'O Studio Well Kraków | Well Hair i Well Head',
+      'seo.about.desc': 'Poznaj Studio Well w Krakowie: przestrzeń Well Hair i Well Head, gdzie fryzjerstwo premium, pielęgnacja i relaks tworzą spójne doświadczenie.',
+      'seo.wellhair.title': 'Well Hair Kraków | Koloryzacja, strzyżenie i pielęgnacja',
+      'seo.wellhair.desc': 'Well Hair w Studio Well Kraków: koloryzacje, strzyżenia i pielęgnacja włosów prowadzone przez doświadczonych stylistów.',
+      'seo.wellhead.title': 'Well Head Kraków | Japanese Head Spa i masaże',
+      'seo.wellhead.desc': 'Well Head w Studio Well Kraków: Japanese Head Spa, masaże relaksacyjne i pielęgnacja skóry głowy w spokojnej strefie wellness.',
+      'seo.team.title': 'Specjaliści Studio Well Kraków | Styliści fryzur',
+      'seo.team.desc': 'Poznaj zespół Studio Well w Krakowie: doświadczonych stylistów, kolorystów i specjalistów, którzy dbają o włosy i komfort klientek.',
+      'seo.training.title': 'Szkolenia fryzjerskie Kraków | Studio Well',
+      'seo.training.desc': 'Szkolenia fryzjerskie Studio Well w Krakowie dla stylistów i właścicieli salonów. Koloryzacja, techniki premium i rozwój zawodowy.',
+      'seo.subscription.title': 'Executive Hair Care Kraków | Subskrypcja Studio Well',
+      'seo.subscription.desc': 'Miesięczna subskrypcja premium Studio Well dla wymagających klientek w Krakowie: dedykowana stylistka, priorytetowe terminy i stała opieka nad fryzurą.',
+      'seo.headspa.title': 'Najlepsze Head Spa w Krakowie | WELLNESS Studio Well',
+      'seo.headspa.desc': 'WELLNESS Studio Well w Krakowie: Head Spa, podejście trychologiczne i fizjoterapeutyczne, indywidualne protokoły i wsparcie skóry głowy.',
     },
 
     en: {
@@ -165,6 +191,8 @@
       'nav.headspa':      'Head SPA',
       'nav.book':         'Book Now',
       'nav.locate':       'Locate a Salon',
+      'nav.contact':      'Contact',
+      'nav.follow':       'Follow On',
 
       /* Hero slide 2 */
       'hero2.l1':   'Here begins',
@@ -270,6 +298,8 @@
       'bc.training': 'Training',
       'bc.wellhair': 'Well Hair',
       'bc.wellhead': 'Well Head',
+      'bc.subscription': 'Membership',
+      'bc.headspa':   'Head SPA',
 
       /* About page */
       'ap.sub':   'About Us',
@@ -296,6 +326,28 @@
       'sp.about.iulia':    'About Iulia Stepanenko',
       'sp.about.karolina': 'About Karolina Suder',
       'sp.about.julianna': 'About Julianna Ruta',
+      'sp.bio.sara': 'My name is Sara and I am the owner of Studio Well, which I have been running with passion since 2016. Through continuous training and experience, my salon has achieved international recognition. Since 2018 I have shared my knowledge by leading training for hairdressers and salon owners, inspiring others to develop their craft.<br><br>In 2021 I received the Małopolska Quality Mark, which allows me to run EU co-financed training ending with registered certificates. My favourite area is colour, especially image transformations, which I treat as individual projects thanks to my additional education in make-up and character styling.<br><br>Privately, I am the mother of little Wandzia and part of a Polish-Brazilian family, so every year I discover new parts of Brazil. In my free time I practise pole dance, which helps me express creativity and keep balance.<br><br>For me, every client matters as a whole person: not only their hair, but also their personality and needs. This is how I create harmonious transformations that highlight each person’s unique style and beauty.',
+      'sp.bio.iulia': 'Hello! My name is Iulia and I have worked as a hairdresser with passion for 10 years. My priority is aesthetics and attention to every detail, which translates into client satisfaction. In the salon I focus on professionalism and an individual approach to each person. In my free time I love cooking and caring for plants, which add a special charm to my workspace. I invite you to visit me at the salon, where together we can create something beautiful.',
+      'sp.bio.karolina': 'My name is Karolina and I have been working as a hairdresser with passion for 15 years. I specialise in colouring and women’s and men’s haircuts. Every transformation is a new challenge for me, so I always aim for perfection and care for every detail. Working with people is my greatest motivation. I approach every client individually, listen to their needs and choose a hairstyle that highlights their natural beauty. I believe a hairstyle can change not only appearance, but also how someone feels. I keep developing my skills, following trends and attending training so I can offer clients the best.',
+      'sp.bio.julianna': 'At Studio Well I work on marketing and create photos and videos for the salon portfolio. My real passion is photography, which helps me capture the uniqueness of every industry, including the art of hairdressing. I believe images have the power to attract and tell stories. Privately, I love travel, which gives me constant inspiration from different cultures and places. I also enjoy arranging spaces and organising events to create memorable experiences.',
+
+      /* SEO */
+      'seo.index.title': 'Studio Well Kraków | Hair Salon, Head Spa, Training',
+      'seo.index.desc': 'Studio Well – award-winning hair salon in Kraków. Colouring, haircuts, Head Spa, VIP membership. Book online.',
+      'seo.about.title': 'About Studio Well Kraków | Well Hair and Well Head',
+      'seo.about.desc': 'Discover Studio Well in Kraków: Well Hair and Well Head, where premium hairdressing, care and relaxation form one refined experience.',
+      'seo.wellhair.title': 'Well Hair Kraków | Colouring, Haircuts and Hair Care',
+      'seo.wellhair.desc': 'Well Hair at Studio Well Kraków: colouring, haircuts and hair care by experienced stylists.',
+      'seo.wellhead.title': 'Well Head Kraków | Japanese Head Spa and Massage',
+      'seo.wellhead.desc': 'Well Head at Studio Well Kraków: Japanese Head Spa, relaxing massage and scalp care in a calm wellness zone.',
+      'seo.team.title': 'Studio Well Kraków Specialists | Hair Stylists',
+      'seo.team.desc': 'Meet the Studio Well team in Kraków: experienced stylists, colourists and specialists caring for your hair and comfort.',
+      'seo.training.title': 'Hairdressing Training Kraków | Studio Well',
+      'seo.training.desc': 'Studio Well hairdressing training in Kraków for stylists and salon owners. Colouring, premium techniques and professional development.',
+      'seo.subscription.title': 'Executive Hair Care Kraków | Studio Well Membership',
+      'seo.subscription.desc': 'Studio Well premium monthly membership for demanding clients in Kraków: dedicated stylist, priority appointments and ongoing hair care.',
+      'seo.headspa.title': 'Best Head Spa in Kraków | WELLNESS Studio Well',
+      'seo.headspa.desc': 'WELLNESS Studio Well in Kraków: Head Spa, trichology and physiotherapy-informed care, individual protocols and real scalp support.',
     }
   };
 
@@ -324,6 +376,28 @@
       if (T[lang][key] !== undefined) {
         el.placeholder = T[lang][key];
       }
+    });
+
+    // SEO elements
+    document.querySelectorAll('[data-i18n-content]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-content');
+      if (T[lang][key] !== undefined) {
+        el.setAttribute('content', T[lang][key]);
+      }
+    });
+    var titleEl = document.querySelector('title[data-i18n-title]');
+    if (titleEl) {
+      var titleKey = titleEl.getAttribute('data-i18n-title');
+      if (T[lang][titleKey] !== undefined) {
+        document.title = T[lang][titleKey];
+      }
+    }
+
+    // Full language blocks for standalone landing pages.
+    document.querySelectorAll('[data-lang-content]').forEach(function (el) {
+      var isActive = el.getAttribute('data-lang-content') === lang;
+      el.hidden = !isActive;
+      el.setAttribute('aria-hidden', isActive ? 'false' : 'true');
     });
 
     // Toggle button active state

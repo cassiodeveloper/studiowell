@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive Hair Care - Studio Well | Perfekcyjna fryzura 24/7</title>
-    <meta name="description" content="Miesięczna subskrypcja premium dla wymagających kobiet biznesu. Twoja dedykowana stylistka, priorytetowe terminy, włosy które wyglądają perfekcyjnie przez 4-6 tygodni. Kraków.">
+    <title data-i18n-title="seo.subscription.title">Executive Hair Care - Studio Well | Perfekcyjna fryzura 24/7</title>
+    <meta name="description" content="Miesięczna subskrypcja premium dla wymagających kobiet biznesu. Twoja dedykowana stylistka, priorytetowe terminy, włosy które wyglądają perfekcyjnie przez 4-6 tygodni. Kraków." data-i18n-content="seo.subscription.desc">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Executive Hair Care - Studio Well">
-    <meta property="og:description" content="Perfekcyjna fryzura która pracuje 24/7 - bez wysiłku z Twojej strony">
+    <meta property="og:title" content="Executive Hair Care - Studio Well" data-i18n-content="seo.subscription.title">
+    <meta property="og:description" content="Miesięczna subskrypcja premium dla wymagających kobiet biznesu. Twoja dedykowana stylistka, priorytetowe terminy, włosy które wyglądają perfekcyjnie przez 4-6 tygodni. Kraków." data-i18n-content="seo.subscription.desc">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studiowell.pl/subskrypcja.html">
+    <link rel="canonical" href="https://studiowell.pl/subskrypcja.html">
+    <link rel="alternate" hreflang="pl" href="https://studiowell.pl/subskrypcja.html">
+    <link rel="alternate" hreflang="en" href="https://studiowell.pl/subskrypcja.html">
+    <link rel="alternate" hreflang="x-default" href="https://studiowell.pl/subskrypcja.html">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1005,9 +1010,11 @@
             transform: translateY(0);
         }
     </style>
+    <link rel="stylesheet" href="assets/css/style-custom.css">
 </head>
 <body>
-    <!-- Hero Section -->
+    <div class="floating-lang"></div>
+    <div data-lang-content="pl"><!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1 class="fade-in">Przestań walczyć z fryzurą przed każdym ważnym spotkaniem</h1>
@@ -1723,6 +1730,25 @@
                 <button id="cookie-back">Wróć</button>
             </div>
         </div>
+    </div></div>
+    <div data-lang-content="en" hidden>
+      <section class="hero">
+        <div class="container">
+          <h1>Executive Hair Care by Studio Well</h1>
+          <p class="subtitle">A premium monthly hair-care membership in Krakow</p>
+          <p class="tagline">Dedicated stylist, priority appointments and a plan that keeps your hair polished for weeks, with less effort between visits.</p>
+          <a href="https://booksy.com/pl-pl/3119_well-hair-sara-batista-pereira_fryzjer_8820_krakow" class="cta-button">Book a consultation - 20 PLN</a>
+          <div class="hero-benefits">
+            <div class="benefit-item"><div><h3>Dedicated care</h3><p>Your stylist knows your hair history, goals and preferred finish.</p></div></div>
+            <div class="benefit-item"><div><h3>Priority scheduling</h3><p>Appointments are planned around your calendar, including selected evenings and Saturdays.</p></div></div>
+            <div class="benefit-item"><div><h3>Longer-lasting results</h3><p>Colour, cut and home-care recommendations are designed to extend the effect for 4-6 weeks.</p></div></div>
+          </div>
+        </div>
+      </section>
+      <section class="section"><div class="container"><h2 class="section-title">What The Membership Includes</h2><p class="section-subtitle">Executive Hair Care is for clients who want consistent premium care, fewer random decisions and hair that looks ready every day.</p><div class="features-grid"><div class="feature-card"><h3>Personal plan</h3><p>Consultation, service schedule and home-care guidance matched to your lifestyle.</p></div><div class="feature-card"><h3>Premium salon services</h3><p>Colouring, cutting, toning and care selected according to your individual plan.</p></div><div class="feature-card"><h3>Ongoing support</h3><p>We adjust the plan when your hair, season, travel or goals change.</p></div></div></div></section>
+      <section class="section"><div class="container"><h2 class="section-title">Why Studio Well?</h2><p>Studio Well has 10 years of premium salon experience in Krakow, international training and a team focused on detail, comfort and long-term hair condition.</p><p>Membership places are limited because every Executive Hair Care client needs time, attention and continuity.</p></div></section>
+      <section class="section"><div class="container"><h2 class="section-title">How To Start</h2><p>Book a consultation, tell us your goal and we will recommend the right care path. After the consultation you decide whether the membership is the right fit.</p><a href="https://booksy.com/pl-pl/3119_well-hair-sara-batista-pereira_fryzjer_8820_krakow" class="cta-button">Book a consultation - 20 PLN</a></div></section>
+      <footer><div class="container"><h4>Contact</h4><a href="mailto:kontakt@studiowell.pl">kontakt@studiowell.pl</a></div></footer>
     </div>
     
     <script>
@@ -1836,5 +1862,6 @@
             observer.observe(el);
         });
     </script>
+    <script src="assets/js/i18n.js"></script>
 </body>
 </html>
