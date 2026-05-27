@@ -84,6 +84,12 @@ button,
 /* ── Team card lift ──────────────────────────────────────── */
 .team-masked:hover { transform: translateY(-5px); }
 
+.team-masked button.team-toggler-btn {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
 /* ── Trends/service cards ────────────────────────────────── */
 .vs-trends-box:hover { transform: translateY(-4px); }
 

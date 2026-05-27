@@ -31,6 +31,9 @@
       'hero1.f2': 'Mistrzowie strzyżenia',
       'hero1.f3': 'Najlepszy relaks',
       'hero3.title': 'Koloryzacja, balayage i Head Spa w Krakowie',
+      'hero3.f1': 'Koloryzacja i refleksy włosów',
+      'hero3.f2': 'Pasemka kolorowe',
+      'hero3.f3': 'Przedłużanie włosów Kraków',
 
       /* Hero slide 2 */
       'hero2.l1':   'Nagradzany salon fryzjerski',
@@ -126,6 +129,10 @@
       'ct.ph.phone':'Numer telefonu',
       'ct.ph.svc':  'Rodzaj usługi',
       'ct.ph.msg':  'Wiadomość',
+      'ct.opt.cut': 'Strzyżenie',
+      'ct.opt.color': 'Koloryzacja',
+      'ct.opt.headspa': 'Head Spa',
+      'ct.opt.other': 'Inne',
 
       /* Footer */
       'ft.about':   'O nas',
@@ -213,6 +220,9 @@
       'hero1.f2': 'Haircut masters',
       'hero1.f3': 'Deep relaxation',
       'hero3.title': 'Colouring, balayage and Head Spa in Kraków',
+      'hero3.f1': 'Hair highlights and lowlights',
+      'hero3.f2': 'Colour highlights',
+      'hero3.f3': 'Hair extensions in Kraków',
 
       /* Hero slide 2 */
       'hero2.l1':   'Award-winning hair salon',
@@ -308,6 +318,10 @@
       'ct.ph.phone':'Phone No',
       'ct.ph.svc':  'Type of Service',
       'ct.ph.msg':  'Message',
+      'ct.opt.cut': 'Haircut',
+      'ct.opt.color': 'Colouring',
+      'ct.opt.headspa': 'Head Spa',
+      'ct.opt.other': 'Other',
 
       /* Footer */
       'ft.about':   'About Us',
