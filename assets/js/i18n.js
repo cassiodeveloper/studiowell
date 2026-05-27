@@ -20,13 +20,21 @@
       'nav.training':     'Szkolenia',
       'nav.headspa':      'Head SPA',
       'nav.book':         'Zarezerwuj',
-      'nav.locate':       'Locate a Salon',
+      'nav.locate':       'Znajdź nas',
       'nav.contact':      'Kontakt',
       'nav.follow':       'Obserwuj',
 
+      /* Hero */
+      'hero1.title': 'Salon fryzjerski Kraków – Studio Well',
+      'hero1.subtitle': 'Koloryzacja, strzyżenie i Head Spa',
+      'hero1.f1': 'Mistrzowie balayage',
+      'hero1.f2': 'Mistrzowie strzyżenia',
+      'hero1.f3': 'Najlepszy relaks',
+      'hero3.title': 'Koloryzacja, balayage i Head Spa w Krakowie',
+
       /* Hero slide 2 */
-      'hero2.l1':   'Tutaj zaczyna się',
-      'hero2.l2':   'Twoja przygoda z pięknem',
+      'hero2.l1':   'Nagradzany salon fryzjerski',
+      'hero2.l2':   'w sercu Krakowa',
       'hero2.f1':   'Nagradzany salon fryzjerski',
       'hero2.f2':   'Head Spa',
       'hero2.f3':   'Szkolenia',
@@ -34,13 +42,13 @@
 
       /* About section (homepage) */
       'home.about.sub':   'REWOLUCJA W ŚWIECIE FRYZJERSTWA',
-      'home.about.title': 'We care about your wellbeing',
+      'home.about.title': 'Salon fryzjerski w centrum Krakowa',
       'home.about.desc':  'Skorzystaj z naszych serwisów premium w klimatycznych wnętrzach zabytkowej kamienicy.',
       'home.about.contact': 'Kontakt',
       'home.about.hours':   'Godziny',
 
       /* Pricing */
-      'price.sub':   'Services & Prices',
+      'price.sub':   'Usługi i cennik',
       'price.title': 'Cennik',
 
       'price.cuts':          'Strzyżenia',
@@ -87,7 +95,7 @@
       'wh.desc':  'W sercu naszego wyjątkowego miejsca kryje się niepowtarzalne doświadczenie, które łączy w sobie sztukę masażu oraz tradycję japońskiej pielęgnacji. W Strefie Well Head zapraszamy do korzystania z dwóch eleganckich gabinetów masażu, które zostały zaprojektowane z myślą o zapewnieniu atmosfery intymności i spokoju.',
 
       /* Team */
-      'team.sub':            'Nasz Zespół',
+      'team.sub':            'Nasz zespół',
       'team.title':          'Nasz zespół',
       'team.sara.role':      'Właścicielka i Kolorystka',
       'team.smm':            'SMM Manager',
@@ -100,9 +108,13 @@
       'ctr.customers':  'Zadowolonych klientek',
 
       /* Gallery */
-      'gal.sub':   'Galeria & Portfolio',
+      'gal.sub':   'Galeria – nasze realizacje',
       'gal.title': 'Galeria',
       'gal.cta':   'Zobacz wszystkie',
+
+      /* Trends */
+      'trends.sub': 'Strzyżenia i koloryzacja',
+      'trends.title': 'Koloryzacja włosów i strzyżenie w Krakowie',
 
       /* Contact */
       'ct.info':    'Informacje',
@@ -194,9 +206,17 @@
       'nav.contact':      'Contact',
       'nav.follow':       'Follow On',
 
+      /* Hero */
+      'hero1.title': 'Hair Salon Kraków – Studio Well',
+      'hero1.subtitle': 'Colouring, haircuts and Head Spa',
+      'hero1.f1': 'Balayage masters',
+      'hero1.f2': 'Haircut masters',
+      'hero1.f3': 'Deep relaxation',
+      'hero3.title': 'Colouring, balayage and Head Spa in Kraków',
+
       /* Hero slide 2 */
-      'hero2.l1':   'Here begins',
-      'hero2.l2':   'Your beauty adventure',
+      'hero2.l1':   'Award-winning hair salon',
+      'hero2.l2':   'in the heart of Kraków',
       'hero2.f1':   'Award-winning hair salon',
       'hero2.f2':   'Head Spa',
       'hero2.f3':   'Training',
@@ -273,6 +293,10 @@
       'gal.sub':   'Photo Gallery & Portfolio',
       'gal.title': 'Gallery',
       'gal.cta':   'View All',
+
+      /* Trends */
+      'trends.sub': 'Haircuts and Colouring',
+      'trends.title': 'Hair Colouring and Haircuts in Kraków',
 
       /* Contact */
       'ct.info':    'Information',
