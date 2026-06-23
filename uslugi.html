@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cennik usług | Studio Well by Sara Batista Pereira — Kraków</title>
+  <meta name="description" content="Cennik usług fryzjerskich Studio Well w Krakowie. Strzyżenia, koloryzacje, Signature Services, zabiegi pielęgnacyjne. Zadzwoń i umów wizytę." />
+  <style>
+    :root {
+      --bg: #f8f5f2;
+      --card: #ffffff;
+      --text: #242424;
+      --muted: #6e6e6e;
+      --accent: #b1845c;
+      --accent-dark: #8f6542;
+      --line: #e9dfd6;
+      --green: #2f7d50;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--line);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo { display: flex; flex-direction: column; }
+    .logo-name {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: var(--text);
+    }
+    .logo-sub {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .rating-badge {
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .star { color: #c9943a; font-size: 15px; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--text);
+      color: #fff;
+      text-align: center;
+      padding: 56px 24px 48px;
+    }
+    .hero-label {
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .hero h1 {
+      font-size: clamp(26px, 5vw, 42px);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 16px;
+      color: #bbb;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 8px;
+      transition: background .2s;
+    }
+    .btn-call:hover { background: var(--accent-dark); }
+    .btn-booksy {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 14px 24px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.3);
+      transition: border-color .2s;
+    }
+    .btn-booksy:hover { border-color: rgba(255,255,255,.7); }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── CATEGORY ── */
+    .category { margin-bottom: 40px; }
+    .category-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    .service-list { display: flex; flex-direction: column; gap: 0; }
+    .service-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line);
+      gap: 12px;
+    }
+    .service-row:last-child { border-bottom: none; }
+    .service-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      flex: 1;
+    }
+    .service-duration {
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+      min-width: 64px;
+      text-align: right;
+    }
+    .service-price {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      min-width: 88px;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    /* ── SIGNATURE highlight ── */
+    .signature .service-row {
+      background: #fdfaf7;
+      border-radius: 6px;
+      padding: 13px 12px;
+      margin-bottom: 4px;
+      border-bottom: none;
+    }
+    .signature .service-name { color: var(--text); }
+
+    /* ── STICKY CALL BAR (mobile) ── */
+    .call-bar {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--accent);
+      z-index: 200;
+    }
+    .call-bar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 16px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--card);
+      border-top: 1px solid var(--line);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer strong { color: var(--text); }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .call-bar { display: block; }
+      main { padding-bottom: 80px; }
+      .service-duration { display: none; }
+      .rating-badge { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <span class="logo-name">STUDIO WELL</span>
+    <span class="logo-sub">by Sara Batista Pereira</span>
+  </div>
+  <div class="rating-badge">
+    <span class="star">★</span> 4,9 &nbsp;·&nbsp; 1847 opinii
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-label">Kraków · Limanowskiego 14</div>
+  <h1>Cennik usług<br>fryzjerskich</h1>
+  <p>Zadzwoń i umów wizytę lub zarezerwuj online przez Booksy.</p>
+  <div class="cta-group">
+    <a class="btn-call" href="tel:+48883866239">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+      Zadzwoń: +48 883 866 239
+    </a>
+    <a class="btn-booksy" href="https://booksy.com/pl-pl/3119_well-hair-sara-batista-pereira_fryzjer_8820_krakow" target="_blank" rel="noopener">
+      Zarezerwuj online →
+    </a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<main>
+
+  <!-- STRZYŻENIA -->
+  <div class="category">
+    <div class="category-title">Strzyżenia</div>
+    <div class="service-list">
+      <div class="service-row">
+        <span class="service-name">Strzyżenie damskie</span>
+        <span class="service-duration">60 min</span>
+        <span class="service-price">185 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Strzyżenie męskie — włosy krótkie</span>
+        <span class="service-duration">40 min</span>
+        <span class="service-price">100 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Strzyżenie męskie — włosy długie</span>
+        <span class="service-duration">50 min</span>
+        <span class="service-price">150 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Grzywka</span>
+        <span class="service-duration">15 min</span>
+        <span class="service-price">40 zł</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- KOLORYZACJA -->
+  <div class="category">
+    <div class="category-title">Koloryzacja jednolita</div>
+    <div class="service-list">
+      <div class="service-row">
+        <span class="service-name">Koloryzacja jednolita — włosy krótkie</span>
+        <span class="service-duration">105 min</span>
+        <span class="service-price">300 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Koloryzacja jednolita — włosy średnie</span>
+        <span class="service-duration">120 min</span>
+        <span class="service-price">400 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Koloryzacja jednolita — włosy długie</span>
+        <span class="service-duration">120 min</span>
+        <span class="service-price">400 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Koloryzacja jednolita EXPRESS</span>
+        <span class="service-duration">90 min</span>
+        <span class="service-price">300 zł</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIGNATURE SERVICES -->
+  <div class="category signature">
+    <div class="category-title">Signature Services</div>
+    <div class="service-list">
+      <div class="service-row">
+        <span class="service-name">Blendowanie siwizny</span>
+        <span class="service-duration">360 min</span>
+        <span class="service-price">1 150 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Airtouch</span>
+        <span class="service-duration">360 min</span>
+        <span class="service-price">1 150 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Reverse Balayage</span>
+        <span class="service-duration">240 min</span>
+        <span class="service-price">810 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Dimensional Bronde</span>
+        <span class="service-duration">240 min</span>
+        <span class="service-price">810 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Platinum Blonde</span>
+        <span class="service-duration">240 min</span>
+        <span class="service-price">810 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Money Piece / Face Framing</span>
+        <span class="service-duration">150 min</span>
+        <span class="service-price">510 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Color Splash — pasemko</span>
+        <span class="service-duration">120 min</span>
+        <span class="service-price">370 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Color Splash — włosy krótkie</span>
+        <span class="service-duration">150 min</span>
+        <span class="service-price">460 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Color Splash — 100% włosów</span>
+        <span class="service-duration">270 min</span>
+        <span class="service-price">830 zł</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ZABIEGI PIELĘGNACYJNE -->
+  <div class="category">
+    <div class="category-title">Zabiegi pielęgnacyjne</div>
+    <div class="service-list">
+      <div class="service-row">
+        <span class="service-name">Pielęgnacja FIBRE CLINIX</span>
+        <span class="service-duration">60 min</span>
+        <span class="service-price">185 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Pielęgnacja AUTHENTIC BEAUTY</span>
+        <span class="service-duration">80 min</span>
+        <span class="service-price">185 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Head Spa Miriamquevedo</span>
+        <span class="service-duration">75 min</span>
+        <span class="service-price">250 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Head Spa Kerastase</span>
+        <span class="service-duration">90 min</span>
+        <span class="service-price">290 zł</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- USŁUGI EXPRESS -->
+  <div class="category">
+    <div class="category-title">Usługi Express</div>
+    <div class="service-list">
+      <div class="service-row">
+        <span class="service-name">Express mycie + suszenie</span>
+        <span class="service-duration">30 min</span>
+        <span class="service-price">90 zł</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STYLIZACJE OKOLICZNOŚCIOWE -->
+  <div class="category">
+    <div class="category-title">Stylizacje okolicznościowe</div>
+    <div class="service-list">
+      <div class="service-row">
+        <span class="service-name">Modelowanie okolicznościowe</span>
+        <span class="service-duration">60 min</span>
+        <span class="service-price">185 zł</span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Fale / Loki Waves</span>
+        <span class="service-duration">80 min</span>
+        <span class="service-price">245 zł</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA dolny -->
+  <div style="text-align:center; margin-top: 48px;">
+    <p style="font-size:14px; color:var(--muted); margin-bottom:20px;">Masz pytania? Zadzwoń lub umów wizytę online.</p>
+    <div class="cta-group">
+      <a class="btn-call" href="tel:+48883866239">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+        +48 883 866 239
+      </a>
+      <a class="btn-booksy" style="background:var(--accent-dark); border:none; color:#fff;" href="https://booksy.com/pl-pl/3119_well-hair-sara-batista-pereira_fryzjer_8820_krakow" target="_blank" rel="noopener">
+        Zarezerwuj na Booksy →
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>Studio Well by Sara Batista Pereira</strong></p>
+  <p style="margin-top:6px;">ul. Bolesława Limanowskiego 14, Kraków · <a href="tel:+48883866239">+48 883 866 239</a></p>
+  <p style="margin-top:6px;"><a href="https://www.instagram.com/studiowell.hair/" target="_blank">@studiowell.hair</a> &nbsp;·&nbsp; <a href="https://booksy.com/pl-pl/3119_well-hair-sara-batista-pereira_fryzjer_8820_krakow" target="_blank">Booksy</a></p>
+</footer>
+
+<!-- STICKY CALL BAR (mobile only) -->
+<div class="call-bar">
+  <a href="tel:+48883866239">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+    Zadzwoń i umów wizytę — +48 883 866 239
+  </a>
+</div>
+
+</body>
+</html>
